@@ -4,8 +4,9 @@ import Typewriter from "typewriter-effect"; // For animated text effect
 
 const Home = () => {
   return (
-    <div className="container">
-      <div className="row align-items-center min-vh-100">
+    <div className="container-fluid p-0 m-0"> {/* Ensures full width & removes unwanted space */}
+      <div className="row align-items-center min-vh-100 mx-0"> {/* Removes auto margins */}
+        
         {/* Left Side - Hero Text */}
         <div className="col-md-7 d-flex flex-column align-items-center align-items-md-start p-5">
           <h1 className="display-4 text-light fw-bold">
@@ -24,31 +25,34 @@ const Home = () => {
           </h3>
 
           {/* Call-to-Action Buttons */}
-          <div className="mt-4">
-            <a href="Resume.pdf" download className="btn btn-primary me-3">
+          <div className="d-flex align-items-center mt-4 mb-3">
+            <a href="Resume.pdf" download className="btn btn-primary me-3 mb-2">
               📄 View Resume
             </a>
-            <a href="#contact" className="btn btn-outline-light">
+            <a href="#contact" className="btn btn-outline-light mb-2">
               📩 Contact Me
             </a>
           </div>
         </div>
 
-        {/* Right Side - Profile Image (Unchanged) */}
+        {/* Right Side - Profile Image */}
         <div className="col-md-5 d-flex justify-content-center">
           <img
             src={pro_photo}
             alt="profile photo"
+            className="img-fluid animate-pop"
             style={{
               border: '5px solid purple',
-              boxShadow: '0px 0px 20px rgba(128, 0, 128, 0.7)', // Shadow outside the border
+              boxShadow: '0px 0px 20px rgba(128, 0, 128, 0.7)',
               borderRadius: '50%',
-              width: '450px', // Adjust as needed
-              height: '450px', // Adjust as needed
+              maxWidth: '80%',
+              width: '450px',
+              height: 'auto',
               objectFit: 'cover',
             }}
           />
         </div>
+
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ const Contact = () => {
         <div>
           <h1 className="text-warning mb-5">Get in Touch</h1>
         
-        <h5><FaEnvelope className="me-2" /> Email: <a href="mailto:rakeshsatyavarapu369@gmail.com" className="text-white">rakeshsatyavarapu369@gmail.com</a></h5>
+        <p><span className='h5'><FaEnvelope className="me-2" /> Email:</span> <a href="mailto:rakeshsatyavarapu369@gmail.com" className="text-white ">rakeshsatyavarapu369@gmail.com</a></p>
         <h5><FaPhone className="me-2" /> Phone: <a href="tel:+91 9705450251" className="text-white">+91 9705450251</a></h5>
         
         <div className="mt-3 mb-3">
@@ -46,7 +46,7 @@ const Contact = () => {
         </div>
       </div>
       <div className='col-md-6'>
-      <form className='form-group p-5 ' style={{
+      <form className='form-group p-5 ms-auto ' style={{
               background: 'rgba(255, 255, 255, 0.1)',
               backdropFilter: 'blur(10px)',
               borderRadius: '15px'

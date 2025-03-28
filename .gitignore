@@ -7,7 +7,6 @@
 
 # testing
 /coverage
-/public/videos/Mentor.mp4
 /public/videos/MovieDB.mp4
 
 # production

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaReact, FaNodeJs, FaDatabase, FaPython, FaHtml5, FaCss3, FaJs, FaBootstrap} from 'react-icons/fa';
+import { SiFlask } from "react-icons/si";
 import { SiExpress } from 'react-icons/si';
 import { motion } from 'framer-motion';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,10 +11,11 @@ const skills = [
   { name: "JavaScript", icon: <FaJs />, level: 85 },
   { name: "Bootstrap", icon: <FaBootstrap />, level: 85 },
   { name: "React.js", icon: <FaReact />, level: 80 },
-  { name: "Node.js", icon: <FaNodeJs />, level: 85 },
+  { name: "Node.js", icon: <FaNodeJs />, level: 75 },
   { name: "Express.js", icon: <SiExpress />, level: 85 },
   { name: "MongoDB", icon: <FaDatabase />, level: 80 },
   { name: "Python", icon: <FaPython />, level: 80 },
+  {name:'Flask', icon:<SiFlask />,level:70}
 ];
 
 const Skills = () => {
